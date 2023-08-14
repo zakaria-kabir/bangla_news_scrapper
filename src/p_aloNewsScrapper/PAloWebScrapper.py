@@ -104,6 +104,7 @@ class ProthomAloNewsScrapper:
     def gather_news_links(self):
         if self.driver:
             self.driver.get(self.__url)
+            print(self.__url)
             #scroll till end
             self.driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
             #send it to bs4
@@ -156,6 +157,7 @@ class ProthomAloNewsScrapper:
         return [heading, texts]        
 
     def batch_scrap(self):
+        print(f'----Scrapping News from {self.__sdate} to {self.__edate}----')
         self.generate_url()
         self.init_driver()
         self.adds_remove()
@@ -179,7 +181,10 @@ class ProthomAloNewsScrapper:
 
 
 if __name__ == "__main__":
-    print('Enter date in %d-%m-%Y format')
-    pa_scrapper = ProthomAloNewsScrapper('01-01-2023','02-01-2023')
+    print(':::Enter date in %d-%m-%Y format:::')
+    s_date=input('Enter Start Date (%d-%m-%Y): ')
+    e_date=input('Enter End Date (%d-%m-%Y): ')
+    print()
+    pa_scrapper = ProthomAloNewsScrapper(s_date, e_date)
  
     pa_scrapper.batch_scrap()
