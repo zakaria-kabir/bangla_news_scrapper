@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ProthomAloScrapper/__init__.py
+src/ProthomAloScrapper/scrapper.py
+src/ProthomAloScrapper.egg-info/PKG-INFO
+src/ProthomAloScrapper.egg-info/SOURCES.txt
+src/ProthomAloScrapper.egg-info/dependency_links.txt
+src/ProthomAloScrapper.egg-info/not-zip-safe
+src/ProthomAloScrapper.egg-info/requires.txt
+src/ProthomAloScrapper.egg-info/top_level.txt
