@@ -1,0 +1,1 @@
+Bangla Popular Newspaper ProthomAlo news scrapper. It was developed and is just used for educational and research purposes. It is designed to be used in the development of the Bangla Text Data Corpus.
